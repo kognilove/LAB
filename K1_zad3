@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int i;
+    int j;
+    int b;
+    int k;
+    
+    int warstwy;
+    printf("Podaj liczbę warstw:\n");
+    scanf("%d", &warstwy);
+    
+    k = 3;
+    //k = warstwy;
+    for(b = 0; b < warstwy; b++){
+        for(i = 0; i < k; i++){
+            for(j = 0; j < i+1; j++){
+                printf("*");
+            }
+            printf("\n");
+            }
+            k++;
+        }
+    return 0;
+}
